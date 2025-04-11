@@ -1,0 +1,21 @@
+.block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 5fr 10fr;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.logo {
+    color: black;
+    font-size: 3em;
+    margin-top: 10px;
+    font-weight: var(--semi-bold);
+}
+
+@media(max-width: 450px) {
+    .block {
+        display: flex;
+        flex-direction: column;
+    }
+}

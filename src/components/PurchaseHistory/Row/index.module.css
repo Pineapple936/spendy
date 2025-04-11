@@ -1,0 +1,56 @@
+.block {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 70px;
+    box-sizing: border-box;
+    padding: .4rem;
+    border-radius: 10px;
+    background-color: var(--background-history-row);
+}
+
+.block p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 17px;
+}
+
+.block img {
+    height: 50px;
+    width: 50px;
+    border-radius: inherit;
+}
+
+.info {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 .3rem 0 .5rem;
+}
+
+.description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 7rem;
+  }
+
+.income {
+    color: var(--income);
+}
+
+.expense {
+    color: var(--expense)
+}
+
+
+@media (hover: hover) {
+    .block {
+        transition: transform .3s ease;
+    }
+
+    .block:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+}

@@ -1,0 +1,19 @@
+.block {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    width: 100%;
+    min-height: 20vh;
+    max-height: calc(100vh - var(--size-navbar) - 2vh);
+    box-sizing: border-box;
+    padding: .3rem;
+    overflow-y: scroll;
+}
+
+@media(max-width: 450px) {
+    .block {
+        padding: .3rem .3rem var(--size-navbar) .3rem;
+    }
+}

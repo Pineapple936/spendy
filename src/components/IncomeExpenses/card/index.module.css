@@ -1,0 +1,33 @@
+.block {
+    min-width: 164px;
+    height: 80px;
+    box-sizing: border-box;
+    padding: .5rem;
+    border-radius: var(--border-radius);
+    color: var(--font-color-money);
+}
+
+.block img {
+    height: 90%;
+    aspect-ratio: 1 / 1;
+    box-sizing: border-box;
+    padding: .3rem;
+    border-radius: inherit;
+    background-color: var(--background-color);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+    color: white;
+}
+
+.text p:nth-child(2) {
+    font-size: 20px;
+    font-weight: var(--semi-bold);
+}

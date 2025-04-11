@@ -1,0 +1,46 @@
+.block{
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 10;
+    overflow: hidden;
+}
+
+.card {
+    position: absolute;
+    flex-direction: column;
+    gap: 10px;
+    width: var(--width-card-add);
+    height: 150px;
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    padding: .2rem;
+    animation: showCard .3s ease;
+}
+
+.card p {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+.card i {
+    color: #5233ff;
+    font-size: 50px;
+}
+
+
+@keyframes showCard {
+    from {
+        bottom: -150px;
+    }
+    to {
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+}

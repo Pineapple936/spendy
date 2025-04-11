@@ -1,0 +1,60 @@
+.block {
+    --timeShowIcon: .5s;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--size-navbar);
+    background-color: var(--background-history-row);
+}
+
+.buttonAdd {
+    position: relative;
+    height: 100%;
+}
+
+.buttonAdd input {
+    top: 0;
+    left: 50%;
+    border: none;
+    background-color: transparent;
+}
+
+.buttonAdd label img {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    transition: rotate var(--timeShowIcon) ease;
+}
+
+.buttonAdd input:checked + label img {
+    rotate: 180deg;
+}
+
+.icons {
+    --pos: -75px;
+    position: absolute;
+    animation: showIcon var(--timeShowIcon) ease;
+}
+
+.icons a {
+    position: absolute;
+    top: var(--pos);
+}
+
+.icons a:nth-child(1) {
+    left: var(--pos);
+}
+
+.icons a:nth-child(2) {
+    right: var(--pos);
+}
+
+@keyframes showIcon {
+    from {
+        transform: rotate(-180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
